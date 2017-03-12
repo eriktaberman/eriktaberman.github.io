@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Erik Taberman</title>
+	<link rel="stylesheet" type="text/css" href="nakkikaskas3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  
+  <body bgcolor="#343030" onload = "startTimer()">
+  
+    <div id="logo">
+	  <img src="head.png" id="head">
+	  <p id="headtext">ERIK TABERMAN</p>
+	  <p id="headtext_under">ILLUSTRATION & CONCEPT ART</p>
+	</div>
+	
+	<div id="sidenav">
+	  <div id="sidenavimg">
+	    <img class="active navimg" src="sidenavimg1.png">
+	    <img class="navimg" src="sidenavimg2.png">
+	    <img class="navimg" src="sidenavimg3.png">
+		<img class="navimg" src="sidenavimg4.png">
+	  </div>
+	  	  
+	  <div class="navimgeffect">
+	  	<img id="sidenavcoverimg1" src="sidenav1.png">
+	    <!--<img id="sidenavcoverimg2" src="sidenav2.png">-->
+	  </div>
+	  
+	</div>
+	
+    <div id="container">
+	  <div id="tabcontentport1" class="tabcontentport">
+		<div class="imgcontainer" onclick="displayArtwork('#displayartwork3');showDark('#darkenbg');">
+	      <img src="nakkikaskas3.jpg" class="artwork" id="artwork3">
+		</div>
+		
+		<div class="imgcontainer" onclick="displayArtwork('#displayartwork2');showDark('#darkenbg');">
+	      <img src="nakkikaskas2.jpg" class="artwork" id="artwork2">
+		</div>
+		
+		<div class="imgcontainer" onclick="displayArtwork('#displayartwork4');showDark('#darkenbg');">
+	      <img src="nakkikaskas4.jpg" class="artwork" id="artwork4">
+		</div>
+	  </div>
+	  
+	  <div id="tabcontentport2" class="tabcontentport">
+	    <div class="imgcontainer" onclick="displayArtwork('#displayartwork5');showDark('#darkenbg');">
+	      <img src="nakkikaskas5.jpg" class="artwork" id="artwork5">
+		</div>
+		
+		<div class="imgcontainer" onclick="displayArtwork('#displayartwork6');showDark('#darkenbg');">
+	      <img src="nakkikaskas6.jpg" class="artwork" id="artwork6">
+		</div>
+	  </div>
+	  
+	  <div id="tabcontentport3" class="tabcontentport">
+	    <div class="imgcontainer" onclick="displayArtwork('#displayartwork8');showDark('#darkenbg');">
+	      <img src="nakkikaskas8.jpg" class="artwork" id="artwork8">
+		</div>
+		
+		<div class="imgcontainer" onclick="displayArtwork('#displayartwork9');showDark('#darkenbg');">
+	      <img src="nakkikaskas9.jpg" class="artwork" id="artwork9">
+		</div>
+	  </div>
+	  
+	  <div id="tabcontentabout">
+		<img id="profileside" src="profileside.png">
+		<p id="aboutmetext">JAG ÄR EN BANAN...</p>
+	  </div>
+	  
+	  <div id="tabcontentcont">
+	    <img id="profilefront" src="profilefront.png">
+	    <p id="contacttext">Erik Taberman<br>Mail: taberman.erik@gmail.com<br>Phone: +358443034336</p>
+	  </div>
+	</div>
+	
+    <div id="tablinkcont" onclick="changeTab('#tabcontentcont');changeTabLink('#tablinkcontact');navCoverImg('#sidenavcoverimg1');sideNavTabsHide()">
+	  <img src="tab5.png" width="100%" height="100%">
+	    <p id="contact">CONTACT</p>
+	</div>
+	
+	<div id="tablinkabout" onclick="changeTab('#tabcontentabout');changeTabLink('#tablinkaboutact');navCoverImg('#sidenavcoverimg1');sideNavTabsHide();">
+	  <img src="tab5.png" width="100%" height="100%">
+	    <p id="aboutme">ABOUT ME</p>
+	</div>
+	
+	<div id="tablinkport" onclick="changeTab('.tabcontentport');changeTabLink('#tablinkportact');navCoverImg('#sidenavcoverimg2');sideNavTabsHide('#sidenavtab');">
+	  <img src="tab5.png" width="100%" height="100%">
+	    <p id="portfolio">PORTFOLIO</p>
+	</div>
+	
+	  <div id="tablinkcontact">
+	  <img src="tab.png" width="100%" height="100%">
+	  	 <p id="portfolio">CONTACT</p>
+	</div>
+	
+	<div id="tablinkaboutact">
+	  <img src="tab.png" width="100%" height="100%">
+	  	    <p id="portfolio">ABOUT ME</p>
+	</div>
+	
+	<div id="tablinkportact">
+	  <img src="tab.png" width="100%" height="100%">
+	  	    <p id="portfolio">PORTFOLIO</p>
+	</div>
+	
+	<p id="copyright">©Copyright 2017 Erik Taberman - All Rights Reserved</p>
+	
+		
+	<div id="imgdisplay">
+	  <div id="displayartwork2">
+	    <img src="nakkikaskas2.jpg" class="displayartwork">
+	  </div>
+	  
+	  <div id="displayartwork3">
+	    <img src="nakkikaskas3.jpg" class="displayartwork">
+      </div>	
+	  
+	  <div id="displayartwork4">
+	    <img src="nakkikaskas4.jpg" class="displayartwork">
+	  </div>
+	  
+	  <div id="displayartwork5">
+	    <img src="nakkikaskas5.jpg" class="displayartwork">
+      </div>
+	  
+	  <div id="displayartwork6">
+	    <img src="nakkikaskas6.jpg" class="displayartwork">
+	  </div>
+	  
+	  <div id="displayartwork8">
+	    <img src="nakkikaskas8.jpg" class="displayartwork">
+	  </div>
+	  
+	  <div id="displayartwork9">
+	    <img src="nakkikaskas9.jpg" class="displayartwork">
+	  </div>
+  	</div>
+	
+	<div id="darkenbg" onclick="hideDark('darkenbg')">
+	<div>
+	
+	<script src="nakkikaskas.js"></script>
+  </body>
+  
+</html>
